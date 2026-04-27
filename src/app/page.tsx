@@ -27,22 +27,22 @@ const projects = [
   //   link: "#",
   //   github: "https://github.com/shameenakoodan",
   // },
-  {
-    title: "AI Chatbot",
-    description:
-      "A conversational chatbot built using modern LLM APIs with memory and context handling.",
-    tech: ["Next.js", "Node.js", "LLMs"],
-    link: "#",
-    github: "https://github.com/shameenakoodan",
-  },
-  {
-    title: "Weather App",
-    description:
-      "A clean and responsive weather application using React and OpenWeather API.",
-    tech: ["React", "JavaScript", "API"],
-    link: "https://shameenakoodan.github.io/weather-app/",
-    github: "https://github.com/shameenakoodan/weather-app",
-  },
+  // {
+  //   title: "AI Chatbot",
+  //   description:
+  //     "A conversational chatbot built using modern LLM APIs with memory and context handling.",
+  //   tech: ["Next.js", "Node.js", "LLMs"],
+  //   link: "#",
+  //   github: "https://github.com/shameenakoodan",
+  // },
+  // {
+  //   title: "Weather App",
+  //   description:
+  //     "A clean and responsive weather application using React and OpenWeather API.",
+  //   tech: ["React", "JavaScript", "API"],
+  //   link: "https://shameenakoodan.github.io/weather-app/",
+  //   github: "https://github.com/shameenakoodan/weather-app",
+  // },
 ];
 
 export default function Home() {
