@@ -1,65 +1,184 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const aiSkills = [
+  "LLMs (Groq, Gemini, OpenAI)",
+  "Machine Learning & Deep Learning",
+  "RAG & Vector Databases",
+  "Prompt Engineering",
+  "Python (Pandas, NumPy, Scikit‑Learn)",
+  "Next.js, React, Node.js",
+  "SQL, MongoDB, Firebase",
+];
+
+const projects = [
+  {
+    title: "AI PDF Summarizer",
+    description:
+      "Summarizes long PDFs using Groq (Llama 3.1) with chunking, multi‑step summarization, and a clean Streamlit UI.",
+    tech: ["Python", "Groq", "Llama 3.1", "Streamlit"],
+    link: "#",
+    github: "https://github.com/shameenakoodan",
+  },
+  {
+    title: "AI Resume Analyzer",
+    description:
+      "Analyzes resumes, extracts skills, and matches candidates to job descriptions using LLMs.",
+    tech: ["Python", "LLMs", "NLP"],
+    link: "#",
+    github: "https://github.com/shameenakoodan",
+  },
+  {
+    title: "AI Chatbot",
+    description:
+      "A conversational chatbot built using modern LLM APIs with memory and context handling.",
+    tech: ["Next.js", "Node.js", "LLMs"],
+    link: "#",
+    github: "https://github.com/shameenakoodan",
+  },
+  {
+    title: "Weather App",
+    description:
+      "A clean and responsive weather application using React and OpenWeather API.",
+    tech: ["React", "JavaScript", "API"],
+    link: "https://shameenakoodan.github.io/weather-app/",
+    github: "https://github.com/shameenakoodan/weather-app",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main className="min-h-screen px-6 py-10 md:px-16 lg:px-32">
+      {/* Hero */}
+      <section className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+        <div className="max-w-xl">
+          <p className="text-sm uppercase tracking-[0.25em] text-sky-400">
+            AI Engineer • Software Developer
           </p>
+          <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+            Hi, I&apos;m <span className="text-sky-400">Shameena Koodan</span>.
+          </h1>
+          <p className="mt-4 text-slate-300">
+            I build intelligent applications using LLMs, automation, and modern
+            web technologies. I enjoy turning complex problems into simple,
+            elegant AI‑powered solutions.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link
+              href="#projects"
+              className="rounded-full bg-sky-500 px-5 py-2 text-sm font-medium text-slate-950 hover:bg-sky-400"
+            >
+              View AI Projects
+            </Link>
+            <Link
+              href="#contact"
+              className="rounded-full border border-slate-600 px-5 py-2 text-sm font-medium text-slate-100 hover:border-sky-400"
+            >
+              Contact Me
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+      </section>
+
+      {/* About */}
+      <section id="about" className="mt-16 max-w-3xl">
+        <h2 className="text-xl font-semibold text-slate-100">About</h2>
+        <p className="mt-4 text-slate-300">
+          I&apos;m a Texas‑based developer with a strong passion for AI,
+          automation, and full‑stack development. I specialize in building
+          intelligent tools that summarize, analyze, and extract insights from
+          unstructured data. My work blends software engineering with modern AI
+          capabilities to create real‑world impact.
+        </p>
+      </section>
+
+      {/* AI Skills */}
+      <section id="skills" className="mt-16">
+        <h2 className="text-xl font-semibold text-slate-100">AI Skills</h2>
+        <div className="mt-4 grid gap-3 md:grid-cols-2">
+          {aiSkills.map((skill) => (
+            <div
+              key={skill}
+              className="rounded-xl border border-slate-800 bg-slate-900/40 px-4 py-3 text-sm text-slate-200"
+            >
+              {skill}
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Projects */}
+      <section id="projects" className="mt-16">
+        <h2 className="text-xl font-semibold text-slate-100">AI Projects</h2>
+        <div className="mt-6 grid gap-6 md:grid-cols-2">
+          {projects.map((project) => (
+            <div
+              key={project.title}
+              className="flex flex-col justify-between rounded-2xl border border-slate-800 bg-slate-900/40 p-5"
+            >
+              <div>
+                <h3 className="text-lg font-semibold text-slate-50">
+                  {project.title}
+                </h3>
+                <p className="mt-2 text-sm text-slate-300">
+                  {project.description}
+                </p>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {project.tech.map((t) => (
+                    <span
+                      key={t}
+                      className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-200"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <div className="mt-4 flex gap-3 text-sm">
+                <Link href={project.link} className="text-sky-400 hover:underline">
+                  Live demo
+                </Link>
+                <Link
+                  href={project.github}
+                  className="text-slate-400 hover:underline"
+                >
+                  GitHub
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact */}
+      <section id="contact" className="mt-16 mb-10 max-w-xl">
+        <h2 className="text-xl font-semibold text-slate-100">Contact</h2>
+        <p className="mt-3 text-slate-300">
+          Interested in collaborating or discussing an AI project? Let&apos;s
+          connect.
+        </p>
+        <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-300">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:shameenakoodan@gmail.com"
+            className="text-sky-400 hover:underline"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            shameenakoodan@gmail.com
           </a>
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://github.com/shameenakoodan"
             target="_blank"
-            rel="noopener noreferrer"
+            className="hover:underline"
           >
-            Documentation
+            GitHub
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shameenakoodan"
+            target="_blank"
+            className="hover:underline"
+          >
+            LinkedIn
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
