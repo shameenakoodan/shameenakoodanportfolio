@@ -66,7 +66,7 @@ export default function Home() {
             <Link
               href="#projects"
               className="rounded-full bg-sky-500 px-5 py-2 text-sm font-medium text-slate-950 hover:bg-sky-400"
-            >
+             target="_blank">
               View AI Projects
             </Link>
             <Link
