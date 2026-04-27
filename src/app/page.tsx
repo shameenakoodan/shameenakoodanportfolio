@@ -19,14 +19,14 @@ const projects = [
     link: "#",
     github: "https://github.com/shameenakoodan",
   },
-  {
-    title: "AI Resume Analyzer",
-    description:
-      "Analyzes resumes, extracts skills, and matches candidates to job descriptions using LLMs.",
-    tech: ["Python", "LLMs", "NLP"],
-    link: "#",
-    github: "https://github.com/shameenakoodan",
-  },
+  // {
+  //   title: "AI Resume Analyzer",
+  //   description:
+  //     "Analyzes resumes, extracts skills, and matches candidates to job descriptions using LLMs.",
+  //   tech: ["Python", "LLMs", "NLP"],
+  //   link: "#",
+  //   github: "https://github.com/shameenakoodan",
+  // },
   {
     title: "AI Chatbot",
     description:
