@@ -16,8 +16,8 @@ const projects = [
     description:
       "Summarizes long PDFs using Groq (Llama 3.1) with chunking, multi‑step summarization, and a clean Streamlit UI.",
     tech: ["Python", "Groq", "Llama 3.1", "Streamlit"],
-    link: "#",
-    github: "https://github.com/shameenakoodan",
+    link: "https://pdf-summarizer-pz0b.onrender.com/",
+    github: "https://github.com/shameenakoodan/pdf-summarizer",
   },
   // {
   //   title: "AI Resume Analyzer",
