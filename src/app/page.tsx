@@ -318,7 +318,7 @@ export default function Home() {
                       <p className="mt-1 text-sm text-slate-300">{project.description}</p>
 
                       <div className="mt-2 flex flex-wrap gap-2">
-                        {project.tech?.map((t) => (
+                        {project.tech?.map((t:string) => (
                           <span
                             key={t}
                             className="rounded-full bg-slate-800 px-3 py-1 text-xs text-slate-200"
