@@ -59,9 +59,11 @@ export default function Home() {
             Hi, I&apos;m <span className="text-sky-400">Shameena Koodan</span>.
           </h1>
           <p className="mt-4 text-slate-300">
-            I build intelligent applications using LLMs, automation, and modern
-            web technologies. I enjoy turning complex problems into simple,
-            elegant AI‑powered solutions.
+            I’m a Full Stack Developer with a strong foundation in building scalable, user‑focused applications — and I’m currently expanding my expertise into AI and machine learning through hands‑on projects and self‑driven learning.
+
+I love solving real problems with clean, efficient code, and I’m especially excited about how AI can transform the way we build software. My recent work blends traditional full‑stack development with modern AI capabilities, from LLM‑powered tools to intelligent automation.
+
+I’m continuously learning, experimenting, and building — and I enjoy sharing that journey through my projects.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
