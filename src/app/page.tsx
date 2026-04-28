@@ -2,24 +2,28 @@ import Link from "next/link";
 
 const aiSkills = [
   "LLMs (Groq, Gemini, OpenAI)",
-  "Machine Learning & Deep Learning",
-  "RAG & Vector Databases",
   "Prompt Engineering",
+  "RAG & Vector Databases",
+  "Machine Learning Fundamentals",
   "Python (Pandas, NumPy, Scikit‑Learn)",
+  "OCR & Document AI",
   "Next.js, React, Node.js",
+  "Java, Spring Boot",
   "SQL, MongoDB, Firebase",
+  "AWS (S3, EC2), CI/CD",
 ];
+
 
 const projects = [
   {
-  title: "AI PDF Summarizer",
-  description:
-    "A high‑performance PDF summarization system using Groq’s Llama 3.1 with chunking, multi‑step synthesis, OCR support, and automatic language detection. Generates short, medium, or detailed bullet‑point summaries through a responsive Streamlit UI.",
-  tech: ["Python", "Groq", "Llama 3.1", "Streamlit"],
-  link: "https://pdf-summarizer-pz0b.onrender.com",
-  github: "https://github.com/shameenakoodan/pdf-summarizer"
-}
-,
+    title: "AI PDF Summarizer",
+    description:
+      "A high‑performance PDF summarization system using Groq’s Llama 3.1 with chunking, multi‑step synthesis, OCR support, and automatic language detection. Generates short, medium, or detailed bullet‑point summaries through a responsive Streamlit UI.",
+    tech: ["Python", "Groq", "Llama 3.1", "Streamlit"],
+    link: "https://pdf-summarizer-pz0b.onrender.com",
+    github: "https://github.com/shameenakoodan/pdf-summarizer"
+  }
+  ,
   // {
   //   title: "AI Resume Analyzer",
   //   description:
@@ -53,23 +57,23 @@ export default function Home() {
       <section className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
         <div className="max-w-xl">
           <p className="text-sm uppercase tracking-[0.25em] text-sky-400">
-            AI Engineer • Software Developer
+            Full Stack Developer • AI Engineer in Progress
           </p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
             Hi, I&apos;m <span className="text-sky-400">Shameena Koodan</span>.
           </h1>
           <p className="mt-4 text-slate-300">
-            I’m a Full Stack Developer with a strong foundation in building scalable, user‑focused applications — and I’m currently expanding my expertise into AI and machine learning through hands‑on projects and self‑driven learning.
-
-I love solving real problems with clean, efficient code, and I’m especially excited about how AI can transform the way we build software. My recent work blends traditional full‑stack development with modern AI capabilities, from LLM‑powered tools to intelligent automation.
-
-I’m continuously learning, experimenting, and building — and I enjoy sharing that journey through my projects.
+            I&apos;m a full‑stack developer transitioning into AI through hands‑on
+            projects, self‑learning, and real experimentation. I love building
+            intelligent applications that combine strong engineering with modern
+            AI capabilities — turning complex problems into simple, elegant
+            solutions.
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="#projects"
               className="rounded-full bg-sky-500 px-5 py-2 text-sm font-medium text-slate-950 hover:bg-sky-400"
-             target="_blank">
+              target="_blank">
               View AI Projects
             </Link>
             <Link
@@ -86,11 +90,16 @@ I’m continuously learning, experimenting, and building — and I enjoy sharing
       <section id="about" className="mt-16 max-w-3xl">
         <h2 className="text-xl font-semibold text-slate-100">About</h2>
         <p className="mt-4 text-slate-300">
-          I&apos;m a Texas‑based developer with a strong passion for AI,
-          automation, and full‑stack development. I specialize in building
-          intelligent tools that summarize, analyze, and extract insights from
-          unstructured data. My work blends software engineering with modern AI
-          capabilities to create real‑world impact.
+          I&apos;m a Texas‑based full‑stack developer expanding into the world of
+          AI and machine learning. My background includes building scalable web
+          applications, backend systems, and cloud‑ready solutions — and now I&apos;m
+          applying those skills to create AI‑powered tools that summarize,
+          analyze, and extract insights from unstructured data.
+          <br /><br />
+          I&apos;m self‑taught in AI, learning through real projects, experimentation,
+          and continuous exploration. My goal is to blend software engineering
+          with intelligent automation to build applications that make a real
+          impact.
         </p>
       </section>
 
@@ -156,8 +165,8 @@ I’m continuously learning, experimenting, and building — and I enjoy sharing
       <section id="contact" className="mt-16 mb-10 max-w-xl">
         <h2 className="text-xl font-semibold text-slate-100">Contact</h2>
         <p className="mt-3 text-slate-300">
-          Interested in collaborating or discussing an AI project? Let&apos;s
-          connect.
+          I&apos;m open to opportunities in AI engineering, full‑stack development,
+          and roles that blend both. Let&apos;s connect.
         </p>
         <div className="mt-4 flex flex-wrap gap-4 text-sm text-slate-300">
           <a

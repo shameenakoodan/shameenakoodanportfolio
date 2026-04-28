@@ -8,10 +8,10 @@ export default function Navbar() {
       </Link>
 
       <div className="flex gap-6 text-sm text-slate-300">
-  <a href="#about" className="hover:text-sky-400">About</a>
-  <a href="#projects" className="hover:text-sky-400">Projects</a>
-  <a href="#contact" className="hover:text-sky-400">Contact</a>
-</div>
+        <a href="#about" className="hover:text-sky-400">About</a>
+        <a href="#projects" className="hover:text-sky-400">Projects</a>
+        <a href="#contact" className="hover:text-sky-400">Contact</a>
+      </div>
 
     </nav>
   );
