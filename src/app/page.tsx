@@ -36,7 +36,7 @@ const categorizedProjects: Record<string, any[]> = {
       description:
         "Extracts skills, experience, and job match score from resumes using LLMs.",
       tech: ["Python", "LLMs", "NLP"],
-      link="https://ai-resume-analyzer-gamma-three.vercel.app/",
+      link: "https://ai-resume-analyzer-gamma-three.vercel.app/",
       status: "Live",
     },
     {
