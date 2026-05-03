@@ -331,7 +331,7 @@ export default function Home() {
 
                       <div className="mt-3 flex gap-4 text-sm">
                         {project.link && (
-                          <Link href={project.link} className="text-sky-400 hover:underline">
+                          <Link href={project.link} className="text-sky-400 hover:underline" target="_blank">
                             Live demo
                           </Link>
                         )}
