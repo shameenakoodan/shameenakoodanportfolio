@@ -35,7 +35,7 @@ const categorizedProjects: Record<string, any[]> = {
       title: "AI Resume Analyzer",
       description:
         "Analyzes resumes using Groq’s Llama 3.3 with structured JSON extraction, semantic skill matching, and gap detection. Supports PDF/DOCX parsing and generates match scores, missing‑skill insights, and optimized bullet‑point suggestions.",
-      tech: ["Python", "LLMs", "NLP"],
+      tech: ["Python", "Groq", "Llama 3.1", "LLMs", "NLP"],
       link: "https://ai-resume-analyzer-gamma-three.vercel.app/",
       status: "Live",
     },
