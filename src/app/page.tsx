@@ -32,17 +32,17 @@ const categorizedProjects: Record<string, any[]> = {
       status: "Live",
     },
     {
-      title: "AI Resume Analyzer",
+      title: "AI Resume Analyzer → “Career Intelligence System”",
       description:
-        "Analyzes resumes using Groq’s Llama 3.3 with structured JSON extraction, semantic skill matching, and gap detection. Supports PDF/DOCX parsing and generates match scores, missing‑skill insights, and optimized bullet‑point suggestions.",
+        "A career intelligence engine that extracts structured data from resumes, evaluates skill alignment with job descriptions, identifies gaps, and generates optimized bullet‑point improvements. Built for job seekers and recruiters who need fast, objective resume insights.",
       tech: ["Python", "Groq", "Llama 3.1", "LLMs", "NLP"],
       link: "https://ai-resume-analyzer-gamma-three.vercel.app/",
       status: "Live",
     },
     {
-      title: "AI Contract Summarizer",
+      title: "AI Contract Summarizer → “Legal Intelligence Assistant”",
       description:
-        "Summarizes contracts using Groq’s Llama 3.3 with clause extraction, obligation mapping, and risk detection. Identifies payment terms, renewal rules, liability limits, and confidentiality requirements. Supports long‑form text and produces structured bullet‑point summaries for rapid legal understanding.",
+        "A legal‑intelligence assistant that analyzes contracts to extract key clauses, obligations, renewal terms, liabilities, and confidentiality rules. Designed for founders, freelancers, and small businesses who need fast, reliable contract understanding without legal jargon.",
       tech: ["Python", "Groq", "Llama 3.1", "LLMs", "NLP"],
       link: "https://ai-contract-summarizer-rosy.vercel.app/",
       status: "Live",
