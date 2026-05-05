@@ -44,7 +44,8 @@ const categorizedProjects: Record<string, any[]> = {
       description:
         "Summarizes legal documents and extracts clauses, risks, and obligations.",
       tech: ["Python", "LLMs", "OCR"],
-      status: "Coming Soon",
+      link: "https://ai-contract-summarizer-rosy.vercel.app/",
+      status: "Live",
     },
     {
       title: "AI Research Paper Explainer",
