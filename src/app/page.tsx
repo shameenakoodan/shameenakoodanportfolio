@@ -23,9 +23,9 @@ const aiSkills = [
 const categorizedProjects: Record<string, any[]> = {
   "Document & Text Intelligence": [
     {
-      title: "AI PDF Summarizer",
+      title: "AI PDF Summarizer → “General Document Intelligence”",
       description:
-        "Summarizes long PDFs using Groq’s Llama 3.1 with chunking, OCR, and multi‑language support. Generates short, medium, or detailed summaries.",
+        "A universal document‑intelligence tool that digests long PDFs using OCR, smart chunking, and multi‑language support. Designed for students and professionals who need fast, adjustable summaries of research papers, reports, and scanned documents.",
       tech: ["Python", "Groq", "Llama 3.1", "Streamlit"],
       link: "https://pdf-summarizer-pz0b.onrender.com",
       github: "https://github.com/shameenakoodan/pdf-summarizer",
