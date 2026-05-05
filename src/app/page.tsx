@@ -43,7 +43,7 @@ const categorizedProjects: Record<string, any[]> = {
       title: "AI Contract Summarizer",
       description:
         "Summarizes contracts using Groq’s Llama 3.3 with clause extraction, obligation mapping, and risk detection. Identifies payment terms, renewal rules, liability limits, and confidentiality requirements. Supports long‑form text and produces structured bullet‑point summaries for rapid legal understanding.",
-      tech: ["Python", "LLMs", "OCR"],
+      tech: ["Python", "Groq", "Llama 3.1", "LLMs", "NLP"],
       link: "https://ai-contract-summarizer-rosy.vercel.app/",
       status: "Live",
     },
